@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0;font-size:inherit;font:100%}
+fieldset,img{border:0}
+li{list-style:none}
+a{ text-decoration:none; color:#343434;}
+a:hover{color:#1f3974;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+.clear{ clear:both; line-height:0px; height:0px; overflow:hidden}
+.left{ float:left}
+.right{ float:right}
+.none{display: none;}
+body{color:#343434; font-size:12px; line-height:180%;font-family:"微软雅黑";}
+.wrap{width:1200px;height:auto;margin:0 auto;}
+.martop{margin-top:12px;}
+.ml14{margin-left:14px;}
+.center{margin:0 auto;}
+html{overflow-x:hidden;}
+.bnone{border-bottom:none;}
+
+
+.main{width:1200px;margin:0 auto;}
+.header{height:100px;background:#fff;border-top:11px #1f3974 solid;}
+.logo{width:240px;height:43px;padding-top:30px;float:left;}
+.header_right{width:852px;text-align:right;padding-left:25px;float:right;}
+.ver {height:24px;line-height:24px;text-align:right;padding-top:14px;padding-right:3px;}
+
+.nav{height:40px;}
+.nav li {float:left;display:inline-block;width:auto;text-align:center;position:relative;z-index:900;text-align:center;padding:0px 26px;margin:0px;}
+.nav li a {TEXT-ALIGN: center;display:inline-block;font-size:15px;margin:0 auto;height:40px;line-height:40px;padding-bottom:16px;}
+.nav li a:hover {color:#1f3974;text-decoration:none;border-bottom:2px #1f3974 solid;}
+
+
+/*----banner----*/
+.ban_box{width:1200px;margin:0 auto;position:relative;height:583px;}
+.banner {position:absolute;left:50%;margin-left:-960px;width:1920px;height:583px;}
+#full-screen-slider { width:100%; height:583px; position:relative;}
+#slides { display:block; width:100%; height:583px; list-style:none; padding:0; margin:0; position:relative}
+#slides li { display:block; width:100%; height:100%; list-style:none; padding:0; margin:0; position:absolute}
+#pagination { display:block; list-style:none; position:absolute;height:10px;text-align:center; margin:0;width:100%;bottom:20px;z-index:1000;text-align:center;}
+#pagination li { display:inline-block; list-style:none; width:40px; height:5px; margin-left:4px;margin-right:4px;background:#fff; overflow:hidden;}
+#pagination li a { display:inline-block; width:40px; height:5px; padding:0; margin:0;text-indent:-2000px;}
+#pagination li.current { background:#1f3974;}
+
+
+.btn_box {width:100%;position:absolute;z-index:1200;bottom:140px;text-align:center;}
+.btn_box a{display:inline-block;margin:0px 15px;width:152px;height:48px;text-align:center;color:#fff;font-size:15px;line-height:48px;}
+.btn_box a.i_log {background:url(i_log.png)/*tpa=http://www.astforex.com/img/i_log.png*/ left top no-repeat;}
+.btn_box a.i_reg {background:url(i_reg.png)/*tpa=http://www.astforex.com/img/i_reg.png*/ left top no-repeat;}
+
+
+.i_pro {padding:55px 0px 110px 0px;background:url(i_pro_bg.jpg)/*tpa=http://www.astforex.com/img/i_pro_bg.jpg*/ center top no-repeat;}
+.i_mod_tit1 {text-align:center;background:url(i_tit1.png)/*tpa=http://www.astforex.com/img/i_tit1.png*/ center bottom no-repeat;padding-bottom:48px;}
+.i_ch_tit {font-size:30px;font-weight:bold;line-height:44px;}
+.i_en_tit {font-size:16px;line-height:26px;color:#7e7e7e;font-family:Arial, Helvetica, sans-serif;}
+
+.i_pro_main,.i_plat_main{padding-top:35px;}
+
+.i_pro_li {width:264px;float:left;margin-right:48px;text-align:center;}
+.i_pro_img {width:220px;height:220px;background:#fff;border:1px #d2d2d2 solid;border-radius:110px;margin:0 auto;}
+.i_pro_img a {display:block;width:166px;height:166px;margin:7px auto;padding:20px;background:#d8d8d8;border-radius:103px;}
+.i_pro_img a:hover {background:#213c79;transition: background 0.3s;-moz-transition: background 0.3s;-webkit-transition: background 0.3s;-o-transition: background 0.3s;}
+.i_pro_brf {height:66px;line-height:22px;overflow:hidden;margin-top:30px;}
+
+.i_plat {padding:55px 0px 55px 0px;background:url(i_plat_bg.jpg)/*tpa=http://www.astforex.com/img/i_plat_bg.jpg*/ center top no-repeat;color:#fff;}
+.i_mod_tit2 {text-align:center;background:url(i_tit2.png)/*tpa=http://www.astforex.com/img/i_tit2.png*/ center bottom no-repeat;padding-bottom:48px;color:#fff;}
+.i_en_tit2 {font-size:16px;line-height:26px;color:#fafafa;font-family:Arial, Helvetica, sans-serif;}
+.i_plat_img {width:608px;float:left;padding-left:30px;}
+.i_plat_right {width:534px;float:right;}
+.i_plat_tit {font-size:30px;font-weight:bold;line-height:44px;margin-top:30px;}
+.i_plat_info {height:72px;line-height:24px;overflow:hidden;margin-top:10px;font-size:14px;}
+.i_plat_pc {margin-top:24px;}
+.i_plat_mobile {margin-top:20px;}
+.i_plat_mobile a{display:inline-block;margin-right:19px;width:126px;height:38px;text-align:center;font-size:14px;line-height:38px;border:3px #fff solid;border-radius:5px;color:#fff;}
+.i_plat_mobile a:hover {background:#d0b285;border:3px #d0b285 solid;transition: all 0.3s;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;-o-transition: all 0.3s;}
+
+
+.i_news {padding:55px 0px 90px 0px;background:#f4f4f4;}
+.i_news_cls {height:20px;line-height:20px;font-size:15px;text-align:center;margin-top:25px;}
+.i_news_main {width:1230px;margin:0 auto;padding-top:36px;}
+.rollBox{width:1230px;margin:0 auto;overflow:hidden;}
+.rollBox .LeftBotton{height:63px;width:63px;background:url(i_n_larr.png)/*tpa=http://www.astforex.com/img/i_n_larr.png*/ center center no-repeat;overflow:hidden;float:left;display:inline;cursor:pointer;margin-top:130px;}
+.rollBox .RightBotton{height:63px;width:63px;background:url(i_n_rarr.png)/*tpa=http://www.astforex.com/img/i_n_rarr.png*/ center center no-repeat no-repeat;overflow:hidden;float:right;display:inline;cursor:pointer;margin-top:130px;}
+.rollBox .Cont{width:1044px;height:352px;overflow:hidden;float:left;margin-left:30px;}
+.rollBox .ScrCont{width:100000px;}
+.rollBox #List1,.rollBox #List2{float:left;}
+
+.i_news_li {width:304px;float:left;display:inline;margin:0px 7px;padding:15px 15px 15px 15px;background:#fff;}
+.i_news_img {width:304px;height:207px;overflow:hidden;}
+.i_news_img a img {transition: 1000ms all;-webkit-transition: 1000ms all;-moz-transition: 1000ms all;-o-transition: 1000ms all;}
+.i_news_img a:hover img {transform: scale(1.1,1.1);-webkit-transform: scale(1.1,1.1);-moz-transform: scale(1.1,1.1);-o-transform: scale(1.1,1.1);}
+.i_news_tit {height:30px;line-height:30px;font-size:16px;width:304px;overflow:hidden;margin-top:8px;}
+.i_news_brf {height:40px;line-height:20px;overflow:hidden;color:#999;margin-top:2px;}
+.i_news_more {height:26px;margin-top:8px;}
+
+
+.i_join {padding:55px 0px 90px 0px;background:#1f3974;color:#fff;}
+.i_join_text {text-align:center;line-height:24px;margin-top:30px;font-size:14px;}
+.i_join_main {padding-top:80px;text-align:center;}
+.i_join_li {display:inline-block;width:450px;height:198px;border-right:1px #5f719b solid;}
+.i_join_img {padding-top:15px;height:126px;}
+.i_join_tit {height:24px;line-height:24px;font-size:14px;}
+
+.footer{background:#dedede;}
+.foot_nav {padding:80px 0px;color:#585858;}
+.foot_nav a{color:#585858;}
+.foot_nav_list{width:880px;float:left;}
+.foot_nav_list li {display:inline-block;float:left;margin-right:68px;}
+.foot_nav_list li b{font-size:18px;height:28px;line-height:28px;margin-bottom:15px;display:block;}
+.foot_nav_list li p{line-height:24px;}
+.foot_contact {width:300px;float:right;font-size:14px;}
+.foot_tel {height:40px;line-height:40px;background:url(bot_tel.png)/*tpa=http://www.astforex.com/img/bot_tel.png*/ left center no-repeat;padding-left:40px;}
+.foot_tel span {font-size:26px;font-family:Arial, Helvetica, sans-serif;font-weight:600;}
+.foot_mail {height:40px;line-height:40px;font-size:14px;background:url(bot_mail.png)/*tpa=http://www.astforex.com/img/bot_mail.png*/ left center no-repeat;padding-left:40px;}
+.foot_jg{margin-top:20px;line-height:26px;}
+
+.foot_fx{background:url(bot_fx_bg.jpg)/*tpa=http://www.astforex.com/img/bot_fx_bg.jpg*/ center top no-repeat;padding:36px 0px 42px 0px;}
+.foot_fx_tit {height:30px;line-height:30px;font-size:16px;color:#b49567;}
+.foot_fx_con {line-height:20px;color:#8f8f8f;margin-top:8px;}
+.foot_link {margin-top:15px;color:#8f8f8f;}
+.foot_link a {color:#8f8f8f;}
+
+.foot_copy{background:#040e27;height:40px;line-height:40px;padding:10px 0px;color:#cdcfd4;}
+.foot_copy a{color:#cdcfd4;}
+.foot_c_left {width:800px;float:left;}
+.foot_c_right {width:240px;float:right;text-align:right;}
+
+.n_ban_box{width:1200px;margin:0 auto;position:relative;height:490px;}
+.n_banner {position:absolute;left:50%;margin-left:-960px;width:1920px;height:490px;}
+
+.n_position {width:260px;float:left;float:left;height:70px;line-height:70px;background:url(n_home.jpg)/*tpa=http://www.astforex.com/img/n_home.jpg*/ left center no-repeat;font-size:14px;padding-left:24px;color:#999;}
+.n_position a{color:#999;}
+.n_nav {width:800px;float:right;text-align:right;}
+.n_nav a{display:inline-block;width:auto;padding:0px 30px;line-height:70px;font-size:14px;}
+.n_nav a.active{background:#1f3974;color:#fff;}
+.n_main {background:#f7f7f7;padding:66px 0px 66px 0px;}
+
+/*---about----*/
+.n_about_top {padding-bottom:60px;}
+.n_about_tleft {width:680px;float:left;}
+.n_about_tright {width:400px;float:right;text-align:right;}
+.n_a_tit {font-size: 32px;font-weight: bold;line-height: 40px;padding-bottom:15px;background:url(tit_blue.gif)/*tpa=http://www.astforex.com/img/tit_blue.gif*/ left bottom no-repeat;}
+.n_a_con {font-size:14px;line-height:180%;color:#666;padding:20px 0px 0px 0px;}
+.n_a_con p{text-indent:2em;margin-bottom:10px;}
+
+.n_about_mid {padding:80px 0px;background:url(a_adbg.jpg)/*tpa=http://www.astforex.com/img/a_adbg.jpg*/ center top no-repeat;text-align:center;color:#fff;}
+.n_about_mtit {font-size: 36px;font-weight: bold;line-height:48px;padding-bottom:18px;background:url(tit_white.gif)/*tpa=http://www.astforex.com/img/tit_white.gif*/ center bottom no-repeat;}
+.n_about_mcon {font-size:14px;line-height:180%;padding:35px 150px 0px 150px;}
+
+.n_about_bot {padding:80px 0px 20px 0px;text-align:center;}
+.n_about_bcon {padding-top:50px;}
+.n_about_btit {font-size: 36px;font-weight: bold;line-height:48px;padding-bottom:18px;background:url(tit_blue.gif)/*tpa=http://www.astforex.com/img/tit_blue.gif*/ center bottom no-repeat;}
+.a_sm_li {display:inline-block;width:310px;padding:0px 30px;}
+.a_sm_num {width:136px;padding:12px;border:1px #dfdfdf solid;border-radius:80px;height:136px;margin:0 auto;}
+.a_sm_num span {display:block;margin:0 auto;width:136px;background:#1f3974;border-radius:68px;height:136px;font-family:Arial, Helvetica, sans-serif;font-size:60px;line-height:136px;color:#fff;}
+.a_sm_con {font-size:14px;margin-top:30px;line-height:24px;color:#787878;height:72px;overflow:hidden;}
+
+.n_ap_con {font-size:14px;line-height:200%;color:#666;padding:20px 0px 0px 0px;}
+
+/*---trades----*/
+.n_tp_top {}
+.n_tp_con {font-size:14px;line-height:180%;color:#666;padding:40px 0px 40px 0px;}
+.n_tp_img {text-align:center;}
+.n_tp_bot {background:#fff;padding:60px 0px 60px 0px;text-align:center;}
+.n_tp_bcon {padding-top:20px;}
+
+.pro_main {font-size:14px;}
+.pro_de_table {color:#666;}
+.pro_de_table th {background:#b59668;color:#fff;padding:8px 0px;height:42px;text-align:center;line-height:42px;font-size:16px;}
+.pro_de_table tr {border-bottom:1px #dfdfdf solid;}
+.pro_de_table td {height:50px;line-height:50px;text-align:center;font-size:14px;}
+
+
+/*---platform---*/
+.pc_down {}
+.pc_down_top {text-align:center;}
+.pc_down_btn {padding-top:15px;text-align:center;}
+.pc_down_con {padding-top:50px;}
+.phone_down {}
+.ios_down_tit {font-size:24px;font-weight:bold;margin-top:30px;}
+.ios_down_top {}
+.ios_down_btn {height: 37px;width: 160px;margin-top: 16px;border-radius: 4px;line-height: 37px;color: #FFF;font-weight: bold;background:url(downico_1.png)/*tpa=http://www.astforex.com/img/downico_1.png*/  #34373f 136px center no-repeat;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #333333;text-shadow: 0 -1px 0 #A6354B;display:inline-block;
+}
+.ios_down_con {background:url(down_iPhonetu2.jpg)/*tpa=http://www.astforex.com/img/down_iPhonetu2.jpg*/ right center no-repeat;padding-right:300px;margin-top:30px;padding-bottom:100px;border-bottom:1px #ddd dashed;}
+.anzhuo_down_con dt,.ios_down_con dt {height:18px;font-weight:bold;padding-left:14px;border-left:3px #b59668 solid;line-height:18px;margin-bottom:5px;}
+.anzhuo_down_con dd,.ios_down_con dd {padding-top:8px;line-height:22px;text-align:left;-webkit-margin-start:0px;}
+.anzhuo_down_con dd i.xuhao,.ios_down_con dd i.xuhao {display:block;height:20px;width:20px;border-radius:10px;background:#b59668;margin-right:8px;color:#fff;margin-top:2px;line-height:20px;font-style:normal;text-align:center;float:left;}
+.anzhuo_down_con dd span,.ios_down_con dd span {display:block;float:left;width:706px;}
+.ios_ewm {background:url(down_ios_ewm.png)/*tpa=http://www.astforex.com/img/down_ios_ewm.png*/ right 38px no-repeat;}
+
+
+.anzhuo_down_con {background:url(down_anzhuotu2.jpg)/*tpa=http://www.astforex.com/img/down_anzhuotu2.jpg*/ right center no-repeat;padding-right:300px;margin-top:30px;padding-bottom:100px;border-bottom:1px #ddd dashed;}
+
+.anzhuo_ewm {background:url(down_anzhuo_ewm3.png)/*tpa=http://www.astforex.com/img/down_anzhuo_ewm3.png*/ right center no-repeat;background-size:160px auto;}
+
+
+/*---news---*/
+.n_news_list {}
+.pages {text-align:center;font-size:14px;padding:30px 0px 0px 0px;}
+.n_data_box {background:#fff;padding:20px 50px 40px 50px;}
+
+.n_news_li {width:354px;float:left;display:inline;margin-right:24px;padding:15px 15px 15px 15px;background:#fff;margin-bottom:24px;}
+.n_news_img {width:354px;height:241px;overflow:hidden;}
+.n_news_img a img {transition: 1000ms all;-webkit-transition: 1000ms all;-moz-transition: 1000ms all;-o-transition: 1000ms all;}
+.n_news_img a:hover img {transform: scale(1.1,1.1);-webkit-transform: scale(1.1,1.1);-moz-transform: scale(1.1,1.1);-o-transform: scale(1.1,1.1);}
+.n_news_tit {height:30px;line-height:30px;font-size:16px;width:354px;overflow:hidden;margin-top:8px;}
+.n_news_brf {height:40px;line-height:20px;overflow:hidden;color:#999;margin-top:2px;}
+.n_news_more {height:26px;margin-top:8px;}
+
+.n_art_list {background:#fff;padding:20px 50px 40px 50px;}
+.n_art_li {padding:27px 0px;border-bottom:1px #dfdfdf dashed;}
+.n_art_li .n_art_left {width:68px;height:68px;overflow:hidden;float:left;border:1px #ccc solid;border-top:2px #1f3974 solid;text-align:center;}
+.n_art_li .n_art_day {display:block;width:68px;height:36px;margin-top:8px;font-size:24px;line-height:36px;font-family:Arial, Helvetica, sans-serif;}
+.n_art_li .n_art_year {display:block;width:68px;height:16px;font-size:12px;line-height:16px;color:#999;font-family:Arial, Helvetica, sans-serif;}
+.n_art_li .n_art_right {width:1006px;float:right;}
+.n_art_li .n_art_tit {height:24px;font-size:16px;line-height:24px;margin-top:6px;font-weight:bold;}
+.n_art_li .n_art_tit a {color:#333;}
+.n_art_li .n_art_brf {height:24px;line-height:24px;color:#888;overflow:hidden;font-size:13px;margin-top:6px;}
+
+.pages a{display:inline-block;height:32px;line-height:32px;font-size:14px;padding:0px 14px;background:#fff;border:1px #dfdfdf solid;color:#777;margin:0px 2px;}
+.pages a:hover{background:#1f3974;color:#fff;border:1px #1f3974 solid;}
+
+
+.n_show_box {padding:50px 50px;background:#fff;}
+h1.n_show_title {text-align:center;font-size:24px;line-height:34px;padding:0px 0px 20px 0px;text-align:center;font-weight:normal;}
+.n_show_info {text-align:center;height:26px;line-height:26px;font-size:14px;color:#888;}
+.n_show_con {font-size:16px;line-height:200%;padding:20px 0px;color:#666;}
+.n_show_con img {max-width:1000px;height:auto !important;}
+.n_show_con p{margin-bottom:15px;}
+.n_show_share {padding-top:30px;}
+.n_show_next {padding-top:30px;font-size:14px;line-height:26px;display:block;}
