@@ -12,14 +12,14 @@
 */
 
 Route::view('/','index')->name('index');
-Route::view('/about','about')->name('about');
-Route::view('/trades','trades')->name('trades');
-Route::view('/about','about')->name('about');
-Route::view('/platform','platform')->name('platform');
-Route::view('/news','news')->name('news');
-Route::view('/study','study')->name('study');
-Route::view('/server','server')->name('server');
-Route::view('/member','member')->name('member');
+Route::resource('about','AboutController',['only' => ['show']]);
+Route::resource('news','NewsController',['only' => ['index','show']]);
+Route::view('trades','trades')->name('trades');
+Route::view('platform','platform')->name('platform');
+Route::resource('studyCategories','StudyCategoriesController',['only' => ['show']]);
+Route::resource('studys','StudysController',['only' => ['show']]);
+Route::view('server','server')->name('server');
+Route::view('member','member')->name('member');
 
 Auth::routes();
 

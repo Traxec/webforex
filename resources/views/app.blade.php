@@ -13,17 +13,17 @@
   <!--header-->
   <div class="header">
     <div class="wrap">
-     <div class="logo"><a href="index.htm" tppabs="http://www.astforex.com/"><img src="./images/logo.png" tppabs="http://www.astforex.com/img/logo.png" alt="AST艾思特外汇"></a></div>
+     <div class="logo"><a href="index.htm"><img src="{{asset('./images/logo.png')}}" tppabs="http://www.astforex.com/img/logo.png" alt="AST艾思特外汇"></a></div>
      <div class="header_right">
        <div class="ver"><a href="index.htm" tppabs="http://www.astforex.com/">中文版</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:if(confirm(%27http://en.astforex.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://en.astforex.com/%27" tppabs="http://en.astforex.com/" target="_blank">English</a></div>
        <div class="nav">
         <ul>
          <li><a href="{{ route('index') }}">首页</a></li>
-         <li><a href="{{ route('about') }}"><span>公司介绍</span></a></li>
+         <li><a href="{{ route('about.show',1) }}"><span>公司介绍</span></a></li>
          <li><a href="{{ route('trades') }}"><span>交易品种</span></a></li>
          <li><a href="{{ route('platform') }}"><span>交易平台</span></a></li>
-         <li><a href="{{ route('news') }}"><span>最新资讯</span></a></li>
-         <li><a href="{{ route('study') }}"><span>交易学院</span></a></li>
+         <li><a href="{{ route('news.index') }}"><span>最新资讯</span></a></li>
+         <li><a href="{{ route('studyCategories.show',1) }}"><span>交易学院</span></a></li>
          <li><a href="{{ route('server') }}" style="position: relative;"><span>客户支持</span></a></li>
          <li style="padding-right:0px;"><a href="{{ route('member') }}"><span>管理系统</span></a></li>
        </ul>
