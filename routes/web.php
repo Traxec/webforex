@@ -11,15 +11,15 @@
 |
 */
 
-Route::view('/','index')->name('index');
+Route::get('/','IndexController@index')->name('index');
 Route::resource('about','AboutController',['only' => ['show']]);
 Route::resource('news','NewsController',['only' => ['index','show']]);
-Route::view('trades','trades')->name('trades');
-Route::view('platform','platform')->name('platform');
+Route::resource('trades','TradeController',['only' => ['show']]);
+Route::resource('currencies','CurrencyController',['only' => ['index']]);
+Route::resource('crudes','CrudeController',['only' => ['index']]);
+Route::resource('platforms','PlatformController',['only' => ['show']]);
 Route::resource('studyCategories','StudyCategoriesController',['only' => ['show']]);
 Route::resource('studys','StudysController',['only' => ['show']]);
-Route::view('server','server')->name('server');
-Route::view('member','member')->name('member');
 
 Auth::routes();
 

@@ -1,11 +1,11 @@
 @extends('app')
 @section('content')
 <div class="wrap">
-  <div class="n_position"><a href="index.htm">首页</a> > <a href="news.asp.htm">最新资讯</a> > <a href="news.asp-tp=00010002.htm">最新公告</a></div>
+  <div class="n_position"><a href="/">首页</a> > <a href="{{route('news.index')}}">最新资讯</a> > <a href="{{route('news.index')}}">最新公告</a></div>
   <div class="n_nav">
     
     
-    <a href="news.asp-tp=00010002.htm" class="active">最新公告</a>      
+    <a href="#" class="active">最新公告</a>      
     
   </div>
   <div class="clear"></div>

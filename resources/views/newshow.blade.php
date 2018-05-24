@@ -1,11 +1,8 @@
 @extends('app')
 @section('content')
 <div class="wrap">
-        <div class="n_position"><a href="index.htm" tppabs="http://www.astforex.com/">首页</a> > <a href="news.asp.htm" tppabs="http://www.astforex.com/news.asp">最新资讯</a> > <a href="news.asp-tp=00010002.htm" tppabs="http://www.astforex.com/news.asp?tp=00010002">最新公告</a></div>
+        <div class="n_position"><a href="/">首页</a> > <a href="{{route('news.index')}}">最新资讯</a> > <a href="{{route('news.show',$news->id)}}">{{$news->title}}</a></div>
         <div class="n_nav">
-                        
-                        
-                            <a href="news.asp-tp=00010002.htm" tppabs="http://www.astforex.com/news.asp?tp=00010002" class="active">最新公告</a>      
                                
         </div>
         <div class="clear"></div>

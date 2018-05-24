@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
 <div class="wrap">
-  <div class="n_position"><a href="index.htm" tppabs="http://www.astforex.com/">首页</a> > <a href="about.asp.htm" tppabs="http://www.astforex.com/about.asp">公司介绍</a> > <a href="about.asp-id=5.htm" tppabs="http://www.astforex.com/about.asp?id=5">关于AST</a></div>
+  <div class="n_position"><a href="/" >首页</a> > <a href="{{route('about.show',1)}}" >公司介绍</a> > <a href="{{route('about.show',$about->id)}}">{{ $about->name }}</a></div>
   <div class="n_nav">
    @foreach($abouts as $value) 
    <a href="{{route('about.show',$value->id)}}" class="{{active_class((if_route('about.show') && if_route_param('about',$value->id)))}}">{{ $value->name }}</a> 
@@ -19,7 +19,7 @@
       {!! $about->content !!}
     </div>
   </div>
-  <div class="n_about_tright"><img src="{{asset('./images/a_about.jpg')}}" tppabs="http://www.astforex.com/img/a_about.jpg"></div>
+  <div class="n_about_tright"><img src="{{asset('./images/a_about.jpg')}}"></div>
    <div class="clear"></div>
  </div>
  <!--//-->
