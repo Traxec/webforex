@@ -37,14 +37,14 @@
 <!--i_plat-->
 <div class="i_plat" style="background: url({{asset('images/i_plat_bg.jpg')}}) ">
   <div class="wrap"> 
-    <div class="i_mod_tit2" style="background: url({{asset('images/i_tit2.png')}}) center bottom no-repeat;"><p class="i_ch_tit">AST外汇交易平台</p><p class="i_en_tit2">TRADING PLATFORM</p></div>
+    <div class="i_mod_tit2" style="background: url({{asset('images/i_tit2.png')}}) center bottom no-repeat;"><p class="i_ch_tit">{{setting('site.title')}}外汇交易平台</p><p class="i_en_tit2">TRADING PLATFORM</p></div>
     <div class="i_plat_main">
       <div class="i_plat_img"><img src="{{asset('./images/i_plat.png')}}" alt="交易平台"></div>
       <div class="i_plat_right">
        <div class="i_plat_tit">{{setting('site.title')}} MT4</div>
        <div class="i_plat_info">MT4平台提供详细的动态报价分析。50多种指标工具可以帮助简化您的分析工作，使您可以清楚的分析出当今市场的形势，确定出上升期还是振荡期等不同时期，确定何时进行买或卖。</div>
-       <div class="i_plat_pc"><a href="" target="_blank"><img src="./images/i_pc_down.png"></a></div>
-       <div class="i_plat_mobile"><a href="platform.asp-id=48.htm" class="i_plat_ios">IOS端下载</a><a href="platform.asp-id=48.htm" class="i_plat_android">安卓端下载</a></div>
+       <div class="i_plat_pc"><a href="{{ $platform->download }}" target="_blank"><img src="./images/i_pc_down.png"></a></div>
+       <div class="i_plat_mobile"><a href="{{route('platforms.show',3)}}" class="i_plat_ios">IOS端下载</a><a href="{{route('platforms.show',3)}}" class="i_plat_android">安卓端下载</a></div>
      </div>                                             
      <div class="clear"></div>
    </div>
